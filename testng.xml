@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/TalentPro_UnityDev1/RokomariWebAutomation">
+        <classes>
+
+            <class name="TestCases.TestLoginPage">
+                <methods>
+                    <include name="emailLogin"/>
+                    <include name="googleLogin"/>
+                </methods>
+            </class>
+            <class name="TestCases.TestHomePage">
+                <methods>
+                    <include name="removeAd"/>
+                    <include name="writerPageOpen"/>
+                </methods>
+            </class>
+            <class name="TestCases.TestAuthorPage">
+                <methods>
+                    <include name="CategoryFilter"/>
+                    <include name="searchForBook"/>
+                    <include name="addToCart"/>
+                </methods>
+            </class>
+            <class name="TestCases.TestCartPage">
+                <methods>
+                    <include name="shippingAddressInput"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
